@@ -1,0 +1,8 @@
+.home-wrapper {
+  .menu {
+    margin-top: 64px;
+    h3:not(:last-child) {
+      margin-right: 64px;
+    }
+  }
+}

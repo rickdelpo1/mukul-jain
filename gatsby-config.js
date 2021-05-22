@@ -1,15 +1,19 @@
 module.exports = {
   siteMetadata: {
     title: "Mukul Jain",
+    email: "jainmukul1996@gmail.com",
+    github: "https://github.com/mukuljainx",
+    twitter: "https://twitter.com/ion_reactor",
   },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-gatsby-cloud",
+    "gatsby-transformer-json",
     "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "",
+        trackingId: "UA-84739802-3",
       },
     },
     "gatsby-plugin-react-helmet",

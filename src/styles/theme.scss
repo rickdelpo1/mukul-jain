@@ -1,0 +1,29 @@
+$white: #efefef;
+$black: #0d0d0d;
+
+$dark: (
+  "#___gatsby": (
+    background: $black,
+    color: $white,
+  ),
+  a: (
+    color: $white,
+  ),
+);
+
+@mixin themable($theme-name, $theme-map) {
+  .#{$theme-name} {
+    // Loop through each of the keys (sections)
+    @each $section, $map in $theme-map {
+      $map-keys: map-keys($map);
+
+      #{$section} {
+        @each $key in $map-keys {
+          #{$key}: map-get($map, $key);
+        }
+      }
+    }
+  }
+}
+
+@include themable(dark, $dark);

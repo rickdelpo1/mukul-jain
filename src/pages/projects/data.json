@@ -1,0 +1,91 @@
+[
+  {
+    "img": "mokku.png",
+    "altImg": "Mokku",
+    "name": "Mokku",
+    "stack": "Chrome Extension • ReactJS • TypeScript",
+    "what": "Developed",
+    "websiteLink": "https://mukuljainx.github.io/Mokku/#/",
+    "githubLink": "https://github.com/mukuljainx/mokku",
+    "detailLink": "mokku",
+    "detailTextColor": "dark",
+    "id": "mokku",
+    "info": "Mock API’s from your dev tools.",
+    "detail": "Mokku helps user by mocking API and changing their response, response time and status, user can try all test case scenario like long loading time, error states, or any missing or incorrect data."
+  },
+  {
+    "img": "smart-grid.png",
+    "altImg": "Smart Grid",
+    "name": "Smart Grid",
+    "stack": "ReactJS • TypeScript",
+    "what": "Developed",
+    "websiteLink": "https://mukuljainx.github.io/smart-grid/",
+    "githubLink": "https://github.com/mukuljainx/smart-grid",
+    "detailLink": "smart-grid",
+    "detailTextColor": "dark",
+    "id": "smart-grid",
+    "info": "A lightweight virtualized grid.",
+    "detail": "Smart Grid is about only 850 bytes which supports pinned columns, virtualization and expensive styling support."
+  },
+  {
+    "img": "budget-book.png",
+    "altImg": "Budget Book | Home Page",
+    "name": "Budget Book",
+    "stack": "ReactJS • TypeScript • Redux • NodeJS • PostgreSQL",
+    "what": "Designed and Developed",
+    "websiteLink": "https://budgetbook.netlify.app/",
+    "detailLink": "budget-book",
+    "detailTextColor": "dark",
+    "id": "budget-book",
+    "info": "Perosnal finance manager.",
+    "detail": "Helps user to track expenses, create budget & goals. Add budget to different bucket, visualize using graphs and save money."
+  },
+  {
+    "img": "plinth2017.jpg",
+    "altImg": "Plinth 2017 | Home Page",
+    "name": "Plinth, The LNMIIT 2017",
+    "stack": "jQuery • Foundation • Nodejs • Expressjs • MongoDB • Sketch",
+    "what": "Designed and Developed",
+    "githubLink": "https://github.com/mukuljainx/plinth_2k17",
+    "websiteLink": "",
+    "detailLink": "plinth-2017",
+    "detailTextColor": "",
+    "id": "plinth2017"
+  },
+  {
+    "img": "timespread.jpg",
+    "altImg": "Time Spread Android app Image",
+    "name": "Time Spread",
+    "stack": "Nodejs • Expressjs • MongoDB • Sketch",
+    "what": "Designed and Developed Backend",
+    "githubLink": "https://github.com/mukuljainx/timespread",
+    "websiteLink": "",
+    "detailLink": "timespread",
+    "detailTextColor": "dark",
+    "id": "timeSpread"
+  },
+  {
+    "img": "zento.jpg",
+    "altImg": "Zento Gallery",
+    "name": "Zento, Pure JS Gallery",
+    "stack": "Vanilla JavaScript",
+    "what": "Developed",
+    "githubLink": "https://github.com/mukuljainx/zento",
+    "websiteLink": "",
+    "detailLink": "zento",
+    "detailTextColor": "dark",
+    "id": "zento"
+  },
+  {
+    "img": "flash.jpg",
+    "altImg": "Chatbot Flash",
+    "name": "Flash - Chatbot",
+    "stack": "Python • AIML • PyAMIL • Bash",
+    "what": "Developed",
+    "githubLink": "https://github.com/mukuljainx/flash_an_interactive_chatbot",
+    "websiteLink": "https://www.youtube.com/watch?v=qAhkqu-n1V8",
+    "detailLink": "flash",
+    "detailTextColor": "",
+    "id": "flashChat"
+  }
+]
