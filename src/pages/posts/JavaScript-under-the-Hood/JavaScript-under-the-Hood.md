@@ -2,7 +2,7 @@
 slug: "/blog/Javascript-under-the-hood"
 date: "2017-05-23"
 title: "Javascript under the hood"
-preview: "short note"
+preview: "Learn how Javascript engine works with visualization."
 ---
 
 ## What is JavaScript

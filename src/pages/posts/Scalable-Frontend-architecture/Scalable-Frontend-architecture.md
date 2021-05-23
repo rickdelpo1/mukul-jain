@@ -2,7 +2,7 @@
 slug: "/blog/creating-scalable-frontend-architecture"
 date: "2021-03-08"
 title: "Creating Scalable Frontend architecture"
-preview: "short note"
+preview: "Difference between Scaleable and Domain driven architecture."
 ---
 
 The architecture always felt like a heavy word, involving a lot of services and Databases, but it exists everywhere the way we arrange components and service in an app is the app’s architecture.

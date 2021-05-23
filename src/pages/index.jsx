@@ -18,7 +18,7 @@ const IndexPage = () => {
         >
           <div className="home-wrapper">
             <h1 className="no-margin">Mukul Jain</h1>
-            <h2 className="no-margin">Developer @Innovaccer</h2>
+            <h2 className="no-margin">Full stack developer</h2>
             <div className="flex menu">
               <h3>
                 <Link to="/projects">Projects</Link>

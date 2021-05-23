@@ -1,8 +1,8 @@
 ---
-slug: "/blog/Smart-Grid-Lightweight-alternate-to-ag-grid"
+slug: "/blog/Smart-Grid-A-Lightweight-virtualized-grid"
 date: "2020-03-08"
-title: "Smart Grid: Lightweight alternate to ag-grid"
-preview: "short note"
+title: "Smart Grid: A Lightweight virtualized grid."
+preview: "Journey from scrollable div to virtualized pinned grid."
 ---
 
 > Live Demo: [Smart Grid](https://mukuljainx.github.io/smart-grid/)

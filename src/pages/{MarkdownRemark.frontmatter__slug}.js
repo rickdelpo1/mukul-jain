@@ -11,15 +11,14 @@ export default function Template({ data }) {
       <main className="with-padding">
         <div className="blog-post">
           <div className="blog-post-header">
-            <Header title={frontmatter.title} nav={["home", "blog"]} />
+            <Header title={frontmatter.title} nav={["blog"]} />
             <p className="no-margin" style={{ fontSize: 16 }}>
               {frontmatter.date}
             </p>
           </div>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <div className="blog-post-content">
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+          </div>
         </div>
       </main>
       <Glitter noCloud />

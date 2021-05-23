@@ -69,3 +69,38 @@ a {
 .underline {
   text-decoration: underline;
 }
+
+.blog {
+  .list {
+    h3 {
+      font-weight: 500;
+    }
+
+    .meta {
+      font-size: 14px;
+    }
+    .preview {
+      margin: 8px 0;
+    }
+  }
+}
+
+.dark {
+  .blog {
+    .list {
+      h3 {
+        color: theme.$green;
+      }
+    }
+  }
+}
+
+.light {
+  .blog {
+    .list {
+      h3 {
+        color: theme.$blue;
+      }
+    }
+  }
+}

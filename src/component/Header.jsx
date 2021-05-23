@@ -2,22 +2,22 @@ import * as React from "react";
 import { Link } from "gatsby";
 import Toggle from "./Toggle";
 
-const Header = ({ title, nav = ["home"] }) => {
+const Header = ({ title, nav = [] }) => {
+  const fullNav = ["Mukul Jain", ...nav];
   return (
     <div>
       <div className="flex row-space-between">
         <div>
-          {nav.map((item, index) => (
+          {fullNav.map((item, index) => (
             <Link
               key={index}
               style={{ textTransform: "capitalize" }}
-              to={item === "home" ? "/" : `/${item}`}
+              to={index === 0 ? "/" : `/${item}`}
             >
               {item} /
             </Link>
           ))}
         </div>
-
         <Toggle />
       </div>
       <h1 className="no-margin">{title}</h1>

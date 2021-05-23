@@ -2,7 +2,6 @@
 slug: "/blog/Theming-App-with-Styled-Components"
 date: "2020-12-08"
 title: "Theming App with Styled Components"
-preview: "short note"
 ---
 
 You must have seen “Dark Theme” in many apps nowadays some app even support the totally customizable theme, but how theming works and how it changes on the go? Well, it’s pretty simple with styled-components, most of the steps will be same for any library.

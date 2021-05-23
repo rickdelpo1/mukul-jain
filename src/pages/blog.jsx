@@ -10,14 +10,16 @@ const Projects = ({ data }) => {
       <main className="with-padding">
         <div className="flex column">
           <Header title="Blog" />
-          <div style={{ marginTop: 80 }}>
+          <div style={{ marginTop: 80 }} className="blog">
             {posts.map((post, index) => (
-              <div style={{ marginBottom: 24 }} key={index}>
+              <div className="list" style={{ marginBottom: 48 }} key={index}>
                 <Link to={post.frontmatter.slug.toLowerCase()}>
                   <h3 className="no-margin">{post.frontmatter.title}</h3>
                 </Link>
-                <p style={{ fontSize: 14 }}>{post.frontmatter.date}</p>
-                <p>{post.frontmatter.preview}</p>
+                <p className="meta" className="no-margin">
+                  {post.frontmatter.date}
+                </p>
+                <p className="preview">{post.frontmatter.preview}</p>
               </div>
             ))}
           </div>

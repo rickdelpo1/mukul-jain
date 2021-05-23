@@ -2,7 +2,7 @@
 slug: "/blog/Setup-a-React-Component-Library-using-Create-React-App-React-Styleguidist-and-Typescript"
 date: "2019-06-02"
 title: "Setup a React Component Library using Create React App, React Styleguidist and TypeScript"
-preview: "short note"
+preview: "Setup Styleguidist in 10 minutes with Typescript."
 ---
 
 I was working on a personal project, where I developed a few components which I thought are worth sharing, but how? I can publish them on NPM, but the user should be able to tinker with them no just see the default examples, that’s when I found out [React Styleguidist](https://react-styleguidist.js.org/), I struggled around for 1 day to get this for the first time and now it takes around 10 minutes with styled-components setup.
