@@ -7,37 +7,54 @@ import "./toggle.scss";
  */
 
 const Toggle = ({ style, className }) => {
-  const [theme, setTheme] = React.useState(window.__theme || "dark");
+  const [theme, setTheme] = React.useState("");
+  const render = React.useRef(false);
+  React.useEffect(() => {
+    let initialTheme = "dark";
+    if (typeof window !== "undefined") {
+      initialTheme = window.__theme;
+    }
+
+    // if (initialTheme !== "dark") {
+    setTheme(initialTheme);
+    // }
+    render.current = true;
+  }, []);
+
+  if (!render.current) {
+    return null;
+  }
 
   return (
     <div style={{ height: 25, ...style }} className={className}>
       <div
-        class="toggleWrapper"
+        className="toggleWrapper"
         aria-label="Switch between Dark and Light mode"
       >
         <input
           type="checkbox"
-          class="dn"
+          className="dn"
           id="dn"
+          name="dn"
           checked={"dark" === theme}
           onChange={(event) => {
-            const theme = event.target.checked ? "dark" : "light";
-            setTheme(theme);
-            window.__setTheme(theme);
+            const x = event.target.checked ? "dark" : "light";
+            setTheme(x);
+            window.__setTheme(x);
           }}
         />
-        <label htmlFor="dn" for="dn" class="toggle">
-          <span class="toggle__handler">
-            <span class="crater crater--1"></span>
-            <span class="crater crater--2"></span>
-            <span class="crater crater--3"></span>
+        <label htmlFor="dn" className="toggle">
+          <span className="toggle__handler">
+            <span className="crater crater--1"></span>
+            <span className="crater crater--2"></span>
+            <span className="crater crater--3"></span>
           </span>
-          <span class="star star--1"></span>
-          <span class="star star--2"></span>
-          <span class="star star--3"></span>
-          <span class="star star--4"></span>
-          <span class="star star--5"></span>
-          <span class="star star--6"></span>
+          <span className="star star--1"></span>
+          <span className="star star--2"></span>
+          <span className="star star--3"></span>
+          <span className="star star--4"></span>
+          <span className="star star--5"></span>
+          <span className="star star--6"></span>
         </label>
       </div>
     </div>

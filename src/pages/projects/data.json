@@ -5,13 +5,35 @@
     "name": "Mokku",
     "stack": "Chrome Extension • ReactJS • TypeScript",
     "what": "Developed",
-    "websiteLink": "https://mukuljainx.github.io/Mokku/#/",
+    "websiteLink": "https://chrome.google.com/webstore/detail/mokku-mock-api-calls-seam/llflfcikklhgamfmnjkgpdadpmdplmji?hl=en",
     "githubLink": "https://github.com/mukuljainx/mokku",
     "detailLink": "mokku",
     "detailTextColor": "dark",
     "id": "mokku",
     "info": "Mock API’s from your dev tools.",
-    "detail": "Mokku helps user by mocking API and changing their response, response time and status, user can try all test case scenario like long loading time, error states, or any missing or incorrect data."
+    "detail": [
+      "Mock API’s from your dev tools.",
+      "Mokku helps user by mocking API and changing their response, response time and status, user can try all test case scenario like long loading time, error states, or any missing or incorrect data."
+    ]
+  },
+  {
+    "img": "web-os.png",
+    "altImg": "Web OS | Agni",
+    "name": "Agni | Web OS",
+    "stack": "ReactJS • TypeScript • Node • Cloud Storage",
+    "what": "Developed",
+    "websiteLink": "https://agni-web.netlify.app/",
+    "githubLink": "https://github.com/mukuljainx/web-os",
+    "detailLink": "agni-web-os",
+    "detailTextColor": "dark",
+    "id": "agni-web-os",
+    "info": "Operating System on the go.",
+    "detail": [
+      "Install Other React app as mini apps, welcome to the browser OS.",
+      "Agni is an experimental JS based OS, browser are becoming more powerful with each passing day, now you can even run NodeJS on it, thanks to StackBlitz, what if browser is the new OS? and user can develop any apps with web stack and just install it?",
+      "Agni supports that, experimentally!, Pick any project from CodeSandbox or built with CRA, zip it and hand over it to Agni, it will build it, push it and will install (link) that project as it's mini app on the fly",
+      "Agni was mostly an POC with infinite possbilities (once the Node in Browser) is public, it doesn't support public assests (you have to require if any). The Calendar app there is actually a different React App."
+    ]
   },
   {
     "img": "smart-grid.png",
@@ -25,7 +47,10 @@
     "detailTextColor": "dark",
     "id": "smart-grid",
     "info": "A lightweight virtualized grid.",
-    "detail": "Smart Grid is about only 850 bytes which supports pinned columns, virtualization and expensive styling support."
+    "detail": [
+      "Smart Grid is a very light only about 850 bytes React component which supports pinned columns, virtualization with expensive styling support.",
+      "It filfulls the basic grid cases where we need to represent the data in infinite scrolling and is very minimal to keep the actual app lite and load faster."
+    ]
   },
   {
     "img": "budget-book.png",
@@ -38,7 +63,9 @@
     "detailTextColor": "dark",
     "id": "budget-book",
     "info": "Perosnal finance manager.",
-    "detail": "Helps user to track expenses, create budget & goals. Add budget to different bucket, visualize using graphs and save money."
+    "detail": [
+      "Helps user to track expenses, create budget & goals. Add budget to different bucket, visualize using graphs and save money."
+    ]
   },
   {
     "img": "plinth2017.jpg",
@@ -50,7 +77,13 @@
     "websiteLink": "",
     "detailLink": "plinth-2017",
     "detailTextColor": "",
-    "id": "plinth2017"
+    "id": "plinth2017",
+    "detail": [
+      "Just another static Website with templating but this was my first project which was used by real customers.",
+      "It was a event registration website where user can create their profiles, register themeselves and pay for the event, when this was launched almost all fests including IIT's used to collect payment through 3rd party registration.",
+      "We were one of the initial fest's to have all everything at one place.",
+      "PS: Still my favorite."
+    ]
   },
   {
     "img": "timespread.jpg",

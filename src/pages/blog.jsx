@@ -16,9 +16,7 @@ const Projects = ({ data }) => {
                 <Link to={post.frontmatter.slug.toLowerCase()}>
                   <h3 className="no-margin">{post.frontmatter.title}</h3>
                 </Link>
-                <p className="meta" className="no-margin">
-                  {post.frontmatter.date}
-                </p>
+                <p className="meta no-margin">{post.frontmatter.date}</p>
                 <p className="preview">{post.frontmatter.preview}</p>
               </div>
             ))}

@@ -9,9 +9,10 @@ export default function Template({ data }) {
   return (
     <>
       <main className="with-padding">
+        <Header nav={["blog"]} />
         <div className="blog-post">
           <div className="blog-post-header">
-            <Header title={frontmatter.title} nav={["blog"]} />
+            <h1 className="no-margin">{frontmatter.title}</h1>
             <p className="no-margin" style={{ fontSize: 16 }}>
               {frontmatter.date}
             </p>

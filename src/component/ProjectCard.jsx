@@ -1,13 +1,36 @@
 import * as React from "react";
-import PropTypes from "prop-types";
-import { Link } from "gatsby";
 
 import "./project-card.scss";
 
-const ProjectCard = ({ project, index }) => {
+const ProjectCard = ({ project }) => {
+  const ref = React.useRef(null);
   return (
     <div className="flex row-center project-card-wrapper">
-      <div className="project-card flex">
+      <div
+        tabIndex={0}
+        className="project-card flex"
+        onClick={() => {
+          if (ref.current) {
+            ref.current.click();
+          }
+        }}
+        onKeyDown={(event) => {
+          if (event.code === "Enter" && ref.current) {
+            ref.current.click();
+          }
+        }}
+        role="button"
+      >
+        <a
+          role="button"
+          target="_blank"
+          ref={ref}
+          rel="noreferrer"
+          href={project.websiteLink || project.githubLink}
+          className="hidden-anchor"
+        >
+          Project url
+        </a>
         <div className="image">
           <img
             className="main-image"
@@ -16,44 +39,48 @@ const ProjectCard = ({ project, index }) => {
           />
         </div>
 
-        <div className="details">
-          <div className="header">
-            <h4>{project.name}</h4>
-            {project.websiteLink && (
-              <Link target="_blank" to={project.websiteLink}>
-                Website
-              </Link>
-            )}
-            {project.githubLink && (
-              <Link target="_blank" to={project.githubLink}>
-                Github
-              </Link>
-            )}
+        <div
+          tabIndex={-1}
+          onKeyDown={(event) => {
+            event.stopPropagation();
+          }}
+          role="button"
+          className="details-wrapper"
+          onClick={(event) => {
+            event.stopPropagation();
+          }}
+        >
+          <div className="details">
+            <div className="header">
+              <h4>{project.name}</h4>
+              {project.websiteLink && (
+                <a target="_blank" rel="noreferrer" href={project.websiteLink}>
+                  Website
+                </a>
+              )}
+              {project.githubLink && (
+                <a target="_blank" rel="noreferrer" href={project.githubLink}>
+                  Github
+                </a>
+              )}
+            </div>
+            <h4 style={{ marginTop: 16 }}>Stack</h4>
+            <p>{project.stack}</p>
+            <p>
+              {(project.detail || []).map((p, key) =>
+                p ? (
+                  <span key={key}>
+                    {p} <br />
+                    <br />
+                  </span>
+                ) : null
+              )}
+            </p>
           </div>
-          <p>{project.info}</p>
-          <h4>Stack</h4>
-          <p>{project.stack}</p>
-          <p>{project.detail}</p>
         </div>
       </div>
     </div>
   );
-};
-
-ProjectCard.propTypes = {
-  project: PropTypes.shape({
-    img: PropTypes.string,
-    altImg: PropTypes.string,
-    detail: PropTypes.string,
-    name: PropTypes.string,
-    stack: PropTypes.string,
-    what: PropTypes.string,
-    websiteLink: PropTypes.string,
-    githubLink: PropTypes.string,
-    detailLink: PropTypes.string,
-    detailTextColor: PropTypes.string,
-    id: PropTypes.string,
-  }),
 };
 
 export default ProjectCard;

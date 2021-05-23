@@ -6,6 +6,7 @@ import Glitter from "../../component/Glitter";
 
 const Projects = ({ data }) => {
   const projects = data.allDataJson.nodes;
+
   return (
     <>
       <main className="with-padding">
@@ -13,7 +14,7 @@ const Projects = ({ data }) => {
           <Header title="Projects" />
           <div className="flex column column-center">
             {projects.map((project, index) => (
-              <ProjectCard project={project} index={index} />
+              <ProjectCard key={index} project={project} />
             ))}
           </div>
         </div>

@@ -14,13 +14,14 @@ const Header = ({ title, nav = [] }) => {
               style={{ textTransform: "capitalize" }}
               to={index === 0 ? "/" : `/${item}`}
             >
+              {" "}
               {item} /
             </Link>
           ))}
         </div>
         <Toggle />
       </div>
-      <h1 className="no-margin">{title}</h1>
+      {title && <h1 className="no-margin">{title}</h1>}
     </div>
   );
 };

@@ -1,19 +1,17 @@
 @use './theme.scss';
 
 .blog-post {
-  // display: flex;
-  // // justify-content: center;
-  // flex-direction: column;
-  // align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
   .blog-post-header {
-    // max-width: 720px;
+    max-width: 720px;
     margin-bottom: 40px;
   }
 
   .blog-post-content {
-    // max-width: 720px;
-    display: flex;
-    justify-content: center;
     > div {
       max-width: 720px;
     }

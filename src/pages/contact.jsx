@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Header from "../component/Header";
 import Glitter from "../component/Glitter";
 
@@ -15,17 +15,23 @@ const Projects = ({ data }) => {
               Mail me at <span className="underline">{email}</span>
             </p>
             <div>
-              <Link
+              <a
                 className="underline"
                 style={{ marginRight: 8 }}
-                to={github}
+                href={github}
                 target="_blank"
+                rel="noreferrer"
               >
                 Github
-              </Link>
-              <Link className="underline" to={twitter} target="_blank">
+              </a>
+              <a
+                rel="noreferrer"
+                className="underline"
+                href={twitter}
+                target="_blank"
+              >
                 Twitter
-              </Link>
+              </a>
             </div>
           </div>
         </div>
