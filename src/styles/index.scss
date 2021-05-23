@@ -1,5 +1,6 @@
 @use "./theme.scss";
 @use "./text.scss";
+@use "./code.scss";
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500&display=swap");
 
 * {
@@ -27,12 +28,14 @@ body {
 main {
   margin-left: auto;
   margin-right: auto;
-  width: 1280px;
-  height: 100%;
+  max-width: 1024px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .with-padding {
   padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 a {

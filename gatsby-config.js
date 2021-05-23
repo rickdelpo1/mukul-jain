@@ -11,6 +11,41 @@ module.exports = {
     "gatsby-transformer-json",
     "gatsby-plugin-image",
     {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-prismjs",
+            options: {
+              inlineCodeMarker: "÷",
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1024,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          "gatsby-remark-copy-linked-files",
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: "UA-84739802-3",
@@ -34,6 +69,14 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: "./src/pages/posts/",
+      },
+      __key: "posts",
     },
     {
       resolve: "gatsby-source-filesystem",

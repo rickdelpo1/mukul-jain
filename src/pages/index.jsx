@@ -5,7 +5,7 @@ import "../styles/home.scss";
 
 const IndexPage = () => {
   return (
-    <main>
+    <main className="h-100">
       <div
         className="flex column row-center column-center h-100 home-wrapper"
         style={{ textAlign: "left" }}
@@ -18,7 +18,7 @@ const IndexPage = () => {
               <Link to="/projects">Projects</Link>
             </h3>
             <h3>
-              <Link to="/blogs">Blogs</Link>
+              <Link to="/blog">Blog</Link>
             </h3>
             <h3>
               <Link to="/contact">Get in touch</Link>

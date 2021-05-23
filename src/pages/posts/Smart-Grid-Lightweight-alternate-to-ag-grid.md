@@ -1,7 +1,9 @@
-# Smart Grid: How to create a virtualized grid with dynamic height support
-
-[  
-](https://medium.com/@mukuljainx?source=post_page-----9d8c3d38c351--------------------------------)
+---
+slug: "/blog/Smart-Grid-Lightweight-alternate-to-ag-grid"
+date: "2020-03-08"
+title: "Smart Grid: Lightweight alternate to ag-grid"
+preview: "short note"
+---
 
 > Live Demo: [Smart Grid](https://mukuljainx.github.io/smart-grid/)
 
@@ -11,14 +13,14 @@ Okay so change the table, right? but there is no another package which provides 
 
 Something like this:
 
-```
+```jsx
 <div
   style={{
     height: 500,
     width: 700,
     border: "1px solid",
     display: "flex",
-    overflow: "auto"
+    overflow: "auto",
   }}
 >
   <div
@@ -26,7 +28,7 @@ Something like this:
       height: 2000,
       width: 400,
       border: "1px solid red",
-      flexShrink: 0
+      flexShrink: 0,
     }}
   />
   <div
@@ -34,22 +36,22 @@ Something like this:
       height: 2000,
       width: 800,
       border: "1px solid blue",
-      flexShrink: 0
+      flexShrink: 0,
     }}
   />
-</div>;
+</div>
 ```
 
 If you will run this code you will both **div**’s are in sync vertically but the whole container is scrolling horizontally, but we want our unpinned table, i.e. right one for now to scroll, how to solve that? Simply add the right table inside a div with `overflowX:auto`, something like:
 
-```
+```jsx
 <div
   style={{
     height: 500,
     width: 700,
     border: "1px solid",
     display: "flex",
-    overflow: "auto"
+    overflow: "auto",
   }}
 >
   <div
@@ -57,7 +59,7 @@ If you will run this code you will both **div**’s are in sync vertically but t
       height: 2000,
       width: 400,
       border: "1px solid red",
-      flexShrink: 0
+      flexShrink: 0,
     }}
   />
   <div style={{ overflowX: "auto" }}>
@@ -66,11 +68,11 @@ If you will run this code you will both **div**’s are in sync vertically but t
         height: 2000,
         width: 800,
         border: "1px solid blue",
-        flexShrink: 0
+        flexShrink: 0,
       }}
     />
   </div>
-</div>;
+</div>
 ```
 
 ## Working Demo
@@ -87,11 +89,9 @@ I am very lazy and hate reinventing the wheel, so I searched for packages which 
 
 There is one more table there, below that one is also virtualized else tab will be hanged with large data, so how I achieved it, by calculating current position using `**scrollOffset`\*\* then calculating a start & end position something like
 
-```
-
-const start = Math.max(position-buffer-visibleCount, 0);
-const end = Math.min(position+buffer+visibleCount, data.length-1);
-
+```jsx
+const start = Math.max(position - buffer - visibleCount, 0);
+const end = Math.min(position + buffer + visibleCount, data.length - 1);
 ```
 
 Then just rendering just those rows, It was not expected to go fine in one go as I didn’t think virtualization was this simple, but that is what it is! 🙅‍♂️

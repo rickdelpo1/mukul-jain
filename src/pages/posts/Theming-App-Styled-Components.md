@@ -1,4 +1,9 @@
-# Theming App with Styled Components
+---
+slug: "/blog/Theming-App-with-Styled-Components"
+date: "2020-12-08"
+title: "Theming App with Styled Components"
+preview: "short note"
+---
 
 You must have seen “Dark Theme” in many apps nowadays some app even support the totally customizable theme, but how theming works and how it changes on the go? Well, it’s pretty simple with styled-components, most of the steps will be same for any library.
 
@@ -8,7 +13,7 @@ Never refer colours, font-weight and font-size in your app directly always use a
 
 It will look something like
 
-```
+```js
 const theme = {
   colors: {
     primary: '#0043E8',
@@ -33,7 +38,7 @@ With [styled-components](https://www.styled-components.com/), we have an API [**
 
 This is how it is used
 
-```
+```jsx
 <ThemeProvider theme={theme}>
   <App />
 </ThemeProvider
@@ -43,9 +48,9 @@ Here `theme` is just an object which will be available in each styled-component 
 
 for example
 
-```
+```jsx
 const Alert = styled.p`
-  color: ${({props}) => props.theme.colors.alert};
+  color: ${({ props }) => props.theme.colors.alert};
 `;
 ```
 
@@ -53,7 +58,7 @@ const Alert = styled.p`
 
 Just as we created `theme` variable above we have to create a `darkTheme`, it should be same as `theme` structure-wise or if you are using **TypeScript** then there interface should be same, some values can be optional them we have to merge both before using.
 
-```
+```js
 const defaultTheme = {
   colors: {
     primary: '#0043E8',
@@ -78,12 +83,12 @@ const defaultTheme = {
 
 While passing theme to ThemeProvider
 
-```
-<ThemeProvider theme={this.props.theme.value === 'dark' ? darkTheme : defaultTheme}>
+```jsx
+<ThemeProvider
+  theme={this.props.theme.value === "dark" ? darkTheme : defaultTheme}
+>
   <App />
-</ThemeProvider
+</ThemeProvider>
 ```
 
 In the above example, the component is connected to redux so we can get theme from redux and on change by the user, it will be reflected instantly.
-
--
