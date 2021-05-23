@@ -2,12 +2,14 @@ import * as React from "react";
 import { Link } from "gatsby";
 import Toggle from "../component/Toggle";
 import Glitter from "../component/Glitter";
+import Seo from "../component/SEO";
 import "../styles/index.scss";
 import "../styles/home.scss";
 
 const IndexPage = () => {
   return (
     <>
+      <Seo title="Portfolio" />
       <main className="h-100">
         <div>
           <Toggle style={{ float: "right" }} />

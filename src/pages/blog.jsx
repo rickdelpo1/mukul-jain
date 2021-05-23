@@ -2,11 +2,13 @@ import * as React from "react";
 import { Link, graphql } from "gatsby";
 import Header from "../component/Header";
 import Glitter from "../component/Glitter";
+import Seo from "../component/SEO";
 
 const Projects = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
   return (
     <>
+      <Seo title="Blog" description="Mukul Jain's personal blog listing" />
       <main className="with-padding">
         <div className="flex column">
           <Header title="Blog" />

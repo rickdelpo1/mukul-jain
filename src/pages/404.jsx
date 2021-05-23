@@ -2,10 +2,12 @@ import * as React from "react";
 import { Link } from "gatsby";
 import Header from "../component/Header";
 import Glitter from "../component/Glitter";
+import Seo from "../component/SEO";
 
-const Projects = ({ data }) => {
+const Projects = () => {
   return (
     <>
+      <Seo title="404" />
       <main className="with-padding">
         <div className="flex column">
           <Header />

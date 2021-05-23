@@ -2,12 +2,18 @@ import React from "react";
 import { graphql } from "gatsby";
 import Header from "../component/Header";
 import Glitter from "../component/Glitter";
+import Seo from "../component/SEO";
 
 export default function Template({ data }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
   return (
     <>
+      <Seo
+        title={frontmatter.title}
+        description={frontmatter.preview}
+        article
+      />
       <main className="with-padding">
         <Header nav={["blog"]} />
         <div className="blog-post">

@@ -3,12 +3,14 @@ import { graphql } from "gatsby";
 import Header from "../../component/Header";
 import ProjectCard from "../../component/ProjectCard";
 import Glitter from "../../component/Glitter";
+import Seo from "../../component/SEO";
 
 const Projects = ({ data }) => {
   const projects = data.allDataJson.nodes;
 
   return (
     <>
+      <Seo title="Projects" />
       <main className="with-padding">
         <div className="flex column">
           <Header title="Projects" />
