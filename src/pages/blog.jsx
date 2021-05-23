@@ -23,7 +23,7 @@ const Projects = ({ data }) => {
           </div>
         </div>
       </main>
-      <Glitter />
+      <Glitter noCloud />
     </>
   );
 };

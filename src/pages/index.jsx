@@ -16,7 +16,7 @@ const IndexPage = () => {
           className="flex column row-center column-center h-100 home-wrapper"
           style={{ textAlign: "left" }}
         >
-          <div>
+          <div className="home-wrapper">
             <h1 className="no-margin">Mukul Jain</h1>
             <h2 className="no-margin">Developer @Innovaccer</h2>
             <div className="flex menu">
