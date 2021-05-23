@@ -1,13 +1,13 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
+import Header from "../component/Header";
 
 const Projects = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
   return (
     <main className="with-padding">
       <div className="flex column">
-        <Link to="/">Home /</Link>
-        <h1 className="no-margin">Blog</h1>
+        <Header title="Blog" />
         <div style={{ marginTop: 80 }}>
           {posts.map((post, index) => (
             <div style={{ marginBottom: 24 }} key={index}>

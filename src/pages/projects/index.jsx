@@ -1,5 +1,6 @@
 import * as React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
+import Header from "../../component/Header";
 import ProjectCard from "../../component/ProjectCard";
 
 const Projects = ({ data }) => {
@@ -7,8 +8,7 @@ const Projects = ({ data }) => {
   return (
     <main className="with-padding">
       <div className="flex column">
-        <Link to="/">Home /</Link>
-        <h1 className="no-margin">Projects</h1>
+        <Header title="Projects" />
         <div className="flex column column-center">
           {projects.map((project, index) => (
             <ProjectCard project={project} index={index} />

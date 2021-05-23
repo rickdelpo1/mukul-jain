@@ -18,33 +18,36 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
-                window.__onThemeChange = function() {};
-                function setTheme(newTheme) {
-                  window.__theme = newTheme;
-                  preferredTheme = newTheme;
-                  document.body.className = newTheme;
-                  window.__onThemeChange(newTheme);
-                }
-
-
                 var preferredTheme;
                 try {
-                  preferredTheme = localStorage.getItem('theme');
+                  preferredTheme = localStorage.getItem('theme') || 'dark';
                 } catch (err) { }
 
+                window.__theme = preferredTheme;
+
+                if(!document.body.classList.contains(preferredTheme)){
+                  // remove defualt theme
+                  document.body.classList.remove('dark')
+                  document.body.classList.add(preferredTheme)
+                }
+
+                window.__onThemeChange = function() {};
+                window.__setTheme = function(newTheme) {
+                  document.body.classList.remove(window.__theme);
+                  window.__theme = newTheme;
+                  preferredTheme = newTheme;
+                  document.body.classList.add(window.__theme);
+                  window.__onThemeChange(newTheme);
+                  window.__setPreferredTheme(newTheme);
+                }
                 window.__setPreferredTheme = function(newTheme) {
-                  setTheme(newTheme);
                   try {
                     localStorage.setItem('theme', newTheme);
                   } catch (err) {}
                 }
 
-                var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
-                darkQuery.addListener(function(e) {
-                  window.__setPreferredTheme(e.matches ? 'dark' : 'light')
-                });
+                
 
-                setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
               })();
             `,
           }}

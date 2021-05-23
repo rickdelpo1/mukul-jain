@@ -2,7 +2,7 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 
-import "../styles/project-card.scss";
+import "./project-card.scss";
 
 const ProjectCard = ({ project, index }) => {
   return (

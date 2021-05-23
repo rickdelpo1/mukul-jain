@@ -1,13 +1,13 @@
 import * as React from "react";
 import { Link, graphql } from "gatsby";
+import Header from "../component/Header";
 
 const Projects = ({ data }) => {
   const { twitter, email, github } = data.site.siteMetadata;
   return (
     <main className="with-padding">
       <div className="flex column">
-        <Link to="/">Home /</Link>
-        <h1 className="no-margin">Get in touch</h1>
+        <Header title="Get in touch" />
         <div style={{ marginTop: 80 }}>
           <p>
             Mail me at <span className="underline">{email}</span>
