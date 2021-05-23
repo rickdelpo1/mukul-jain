@@ -1,0 +1,60 @@
+.cloud {
+  position: fixed;
+  left: calc(50% - 421px);
+  top: 180px;
+  z-index: -1;
+}
+
+.glitter-footer {
+  width: 100%;
+  margin-bottom: -80px;
+  position: relative;
+
+  &.glitter-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+  }
+
+  .city-scape {
+    width: 100%;
+    margin-bottom: -5px;
+  }
+
+  .plane {
+    height: 7%;
+    bottom: 12%;
+    min-height: 50px;
+    bottom: 100px;
+    position: absolute;
+    z-index: 221;
+    animation: animate 12s linear infinite;
+    cursor: pointer;
+    transform: scaleY(-1) rotate(180deg);
+  }
+
+  @keyframes animate {
+    from {
+      left: calc(100% + 120px);
+    }
+    to {
+      left: -120px;
+    }
+  }
+
+  @keyframes animate2 {
+    from {
+      left: calc(100% + 120px);
+    }
+    to {
+      left: -120px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .plane {
+      bottom: 60px;
+    }
+  }
+}

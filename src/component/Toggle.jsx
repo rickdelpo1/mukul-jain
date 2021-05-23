@@ -6,11 +6,11 @@ import "./toggle.scss";
  * Source: https://codepen.io/bnthor/pen/WQBNxO
  */
 
-const Toggle = () => {
+const Toggle = ({ style, className }) => {
   const [theme, setTheme] = React.useState(window.__theme || "dark");
 
   return (
-    <div style={{ height: 25 }}>
+    <div style={{ height: 25, ...style }} className={className}>
       <div
         class="toggleWrapper"
         aria-label="Switch between Dark and Light mode"

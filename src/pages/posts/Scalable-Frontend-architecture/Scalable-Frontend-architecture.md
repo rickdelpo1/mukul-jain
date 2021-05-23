@@ -19,7 +19,7 @@ We followed a flat structure ( never liked it though 🤷🏿‍♂️) and whil
 
 Now it doesn’t mean each file should be at the root level, that would be the worse structure to follow even for small apps. It means having a folder for each kind of functionality.
 
-![](https://miro.medium.com/max/940/1*zPnpmTGbwEszLr0HSatW7w.png)
+![Flat Structure](./flat.png)
 
 Like here they have divided the functionality or behaviour they pose but not by how & where they are used.
 
@@ -29,7 +29,7 @@ Now this structure is not bad at all and you must have seen this at many tutoria
 
 What is domain-driven design architecture, we have to read the whole book to fully understand it or maybe this [quick book](https://www.infoq.com/minibooks/domain-driven-design-quickly/), loosely in layman’s term it’s the plan of your architecture around the domain or problem, it emphasises placing the primary focus of a project on the core area of the business (the core domain). Let say we are developing a social media site similar to Facebook.
 
-![](https://miro.medium.com/max/955/1*S7uTEeTp9V7mtNACvynbzg.png)
+![Domain-Driven Structure](./dd.png)
 
 > A domain-Driven Structure is a collection of flat structures, similar to a large app which is nothing but a collection of a number of small apps.
 

@@ -77,7 +77,12 @@ If you will run this code you will both **div**’s are in sync vertically but t
 
 ## Working Demo
 
-<https://codesandbox.io/s/sad-kilby-0y4pl?from-embed />
+<iframe src="https://codesandbox.io/embed/sad-kilby-0y4pl?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="virtualized-table"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 Major Problem Solved 🎉 then I inspected ag-grid demo page to check what they do and voila, they are doing almost the same thing.
 
@@ -86,6 +91,13 @@ Cool! but what about virtualization?
 ## Virtualization
 
 I am very lazy and hate reinventing the wheel, so I searched for packages which provide virtualization and found some, so I tried using them with the above code, the result was something like this, refer to table with **virtual table** heading. The package I used is **react-tiny-virtual-list** which obviously is not at fault, it is doing what it is supposed to.
+
+<iframe src="https://codesandbox.io/embed/table-virtual-j1o8u?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="table-virtual"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 There is one more table there, below that one is also virtualized else tab will be hanged with large data, so how I achieved it, by calculating current position using `**scrollOffset`\*\* then calculating a start & end position something like
 

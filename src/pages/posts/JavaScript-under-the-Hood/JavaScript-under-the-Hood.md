@@ -52,7 +52,7 @@ Let's see how things work under the hood.
 
 Javascript is single threaded, it means it can execute one thing at a time, check the figure given below, whenever there some operation like console.log or a + b it pushes it into the stack operates it and pop it out.
 
-![enter image description here](https://cdn-images-1.medium.com/max/800/1*x7NIs6d3BXnXkMXxRsgcqg.png)
+![JS Engine top view](./engine-view.png)
 
 If it is function call then it puts the function in the stack operates it, pops everything out, like shown below
 
@@ -67,7 +67,7 @@ var z = sum(x, y);
 console.log(z);
 ```
 
-![enter image description here](https://miro.medium.com/max/612/1*q-u2WyjkeUehm9SPxu_s-A.png)
+![JS engine code processing](./steps.png)
 
 Then how it is non-blocking? why not things like setTimeout or asynchronous call complete first blocking other code?
 
@@ -88,6 +88,6 @@ setTimeout(function () {
 }, 1000);
 ```
 
-![enter image description here](https://miro.medium.com/max/700/1*b2HkRiEkJI5fGRBnlsQSOA.gif)
+![JS Engine working](./demo.gif)
 
 Thanks to Philip Roberts for wonderful explanation on working of JS.

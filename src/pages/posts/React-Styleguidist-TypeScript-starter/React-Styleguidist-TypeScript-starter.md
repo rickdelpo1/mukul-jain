@@ -47,7 +47,7 @@ As we are going to use this project as a component library will never use the de
 
 Let’s start our server using `yarn start` , the following page will show up.
 
-![Styleguidist running on localhost](./assests/style-guidist-1.png)
+![Styleguidist running on localhost](./style-guidist-1.png)
 
 This is because we haven’t told the styleguidist where our components are, we even don’t have any component yet.
 
@@ -92,7 +92,7 @@ Start the server again using `yarn start` , note that we have made a change to s
 
 It should look something like this
 
-![Styleguidist with button component without example](./assests/style-guidist-button.png)
+![Styleguidist with button component without example](./style-guidist-button.png)
 
 To our component show up there we have to create a `README.md` inside the button folder, like this, every component will have it’s own `README.md` file where you can show a various example with different props.
 
@@ -149,7 +149,7 @@ export default Button;
 
 The Above code and README.md will result into
 
-![Styleguidist with button component without example](./assests/style-guidist-button-props-2.png)
+![Styleguidist with button component without example](./style-guidist-button-props-2.png)
 
 Props & Method section has been automatically added to our component description but the type is unknown, which should not be the case as we are using TypeScript and it should show `”regular” | “large”` , React Styleguidist doesn’t support TypeScript by default it read props from PropType here it is using defaultProps to show the above, we need to add a parser which will parse props defined in typescript.
 
@@ -169,7 +169,7 @@ module.exports = {
 
 You can also add descriptions to IProps using JSDoc just above the prop, it will be shown in the description section
 
-![Styleguidist with button component without example](./assests/style-guidist-button-props.png)
+![Styleguidist with button component without example](./style-guidist-button-props.png)
 
 High five 🙌 We have a component library, now we can add an individual package.json file to every component and publish them on npm.
 

@@ -1,6 +1,8 @@
 $white: #efefef;
 $black: #0d0d0d;
 $code-bg: #011627;
+$green: #22efab;
+$blue: #3d7bfa;
 
 $dark: (
   "#___gatsby": (
@@ -22,6 +24,30 @@ $dark: (
         @each $key in $map-keys {
           #{$key}: map-get($map, $key);
         }
+      }
+    }
+  }
+
+  .dark {
+    a {
+      color: white;
+      &:visited {
+        color: white;
+      }
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  .light {
+    a {
+      color: $black;
+      &:visited {
+        color: $black;
+      }
+      &:hover {
+        color: $blue;
       }
     }
   }
