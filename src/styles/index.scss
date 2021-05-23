@@ -132,3 +132,66 @@ a {
     color: theme.$blue !important;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+  main {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .project-card-wrapper .project-card {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  main {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .project-card-wrapper .project-card {
+    flex-direction: column;
+    .image {
+      width: 100%;
+    }
+    .details-wrapper {
+      width: 100%;
+      flex-grow: 2;
+      .details {
+        position: static;
+        border-left: none;
+        width: 100%;
+      }
+      &:hover {
+        .details {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .project-card-wrapper {
+    margin-bottom: 32px;
+    .project-card {
+      flex-direction: column;
+      .image {
+        display: none;
+      }
+      .details-wrapper {
+        height: auto;
+        .details {
+          position: static;
+        }
+      }
+    }
+  }
+
+  .home-wrapper {
+    .menu {
+      flex-wrap: wrap;
+    }
+  }
+}

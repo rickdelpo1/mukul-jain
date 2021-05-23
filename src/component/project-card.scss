@@ -2,17 +2,14 @@
 
 .project-card-wrapper {
   width: 100%;
+  margin-bottom: 64px;
 
   .project-card {
     border-radius: 4px;
-    width: calc(1024px);
+    width: calc(100% - 64px);
     height: 480px;
     margin-top: 80px;
     max-width: 1024px;
-
-    &:last-child {
-      margin-bottom: 64px;
-    }
 
     .image {
       &:hover,
