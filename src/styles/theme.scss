@@ -27,30 +27,6 @@ $dark: (
       }
     }
   }
-
-  .dark {
-    a {
-      color: $white;
-      &:visited {
-        color: $white;
-      }
-      &:hover {
-        color: $green;
-      }
-    }
-  }
-
-  .light {
-    a {
-      color: $black;
-      &:visited {
-        color: $black;
-      }
-      &:hover {
-        color: $blue;
-      }
-    }
-  }
 }
 
 @include themable(dark, $dark);

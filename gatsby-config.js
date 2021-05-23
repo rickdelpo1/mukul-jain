@@ -4,6 +4,7 @@ module.exports = {
     email: "jainmukul1996@gmail.com",
     github: "https://github.com/mukuljainx",
     twitter: "https://twitter.com/ion_reactor",
+    siteUrl: `https://www.mukulja.in`,
   },
   plugins: [
     "gatsby-plugin-sass",

@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
           ref={ref}
           rel="noreferrer"
           href={project.websiteLink || project.githubLink}
-          className="hidden-anchor"
+          className="display-none"
         >
           Project url
         </a>

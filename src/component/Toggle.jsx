@@ -21,12 +21,12 @@ const Toggle = ({ style, className }) => {
     render.current = true;
   }, []);
 
-  if (!render.current) {
-    return null;
-  }
-
   return (
-    <div style={{ height: 25, ...style }} className={className}>
+    <div
+      hidden={!render.current}
+      style={{ height: 25, ...style }}
+      className={className}
+    >
       <div
         className="toggleWrapper"
         aria-label="Switch between Dark and Light mode"

@@ -25,6 +25,10 @@ body {
   overflow: auto;
 }
 
+.display-none {
+  display: none;
+}
+
 main {
   margin-left: auto;
   margin-right: auto;
@@ -93,6 +97,18 @@ a {
       }
     }
   }
+  a {
+    color: theme.$white;
+    &:visited {
+      color: theme.$white;
+    }
+    &:hover {
+      color: theme.$green;
+    }
+  }
+  .highlight {
+    color: theme.$green !important;
+  }
 }
 
 .light {
@@ -102,5 +118,17 @@ a {
         color: theme.$blue;
       }
     }
+  }
+  a {
+    color: theme.$black;
+    &:visited {
+      color: theme.$black;
+    }
+    &:hover {
+      color: theme.$blue;
+    }
+  }
+  .highlight {
+    color: theme.$blue !important;
   }
 }
