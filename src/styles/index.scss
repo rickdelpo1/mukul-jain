@@ -204,3 +204,19 @@ a {
     }
   }
 }
+
+@media only screen and (max-width: 480px) {
+  main {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-card-wrapper .project-card {
+    width: 100%;
+  }
+
+  .blog-post-header,
+  .blog-post-content {
+    width: 100%;
+  }
+}
