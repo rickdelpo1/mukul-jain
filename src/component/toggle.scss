@@ -9,7 +9,7 @@
     left: -99em;
   }
 
-  .toggle {
+  .toggle-label {
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -145,7 +145,7 @@
   }
 
   input:checked {
-    + .toggle {
+    + .toggle-label {
       background-color: #08446d;
 
       &:before {

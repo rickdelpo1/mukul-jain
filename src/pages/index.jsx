@@ -11,8 +11,8 @@ const IndexPage = () => {
     <>
       <Seo title="Portfolio" />
       <main className="h-100">
-        <div>
-          <Toggle style={{ float: "right" }} />
+        <div className="home-toggle-wrapper">
+          <Toggle />
         </div>
         <div
           className="flex column row-center column-center h-100 home-wrapper"

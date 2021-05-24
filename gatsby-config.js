@@ -7,7 +7,7 @@ module.exports = {
     siteUrl: `https://www.mukulja.in`,
     titleTemplate: "%s | Mukul Jain",
     description: "Personal Blog & Portfolio",
-    image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
+    image: "/images/snape.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@ion_reactor",
   },
   plugins: [

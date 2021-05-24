@@ -25,7 +25,7 @@ const Toggle = ({ style, className }) => {
     <div
       hidden={!render.current}
       style={{ height: 25, ...style }}
-      className={className}
+      className={`toggle ${className}`}
     >
       <div
         className="toggleWrapper"
@@ -43,7 +43,7 @@ const Toggle = ({ style, className }) => {
             window.__setTheme(x);
           }}
         />
-        <label htmlFor="dn" className="toggle">
+        <label htmlFor="dn" className="toggle-label">
           <span className="toggle__handler">
             <span className="crater crater--1"></span>
             <span className="crater crater--2"></span>

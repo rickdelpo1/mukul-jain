@@ -89,6 +89,15 @@ a {
   }
 }
 
+.home-toggle-wrapper {
+  position: relative;
+  .toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
 .dark {
   .blog {
     .list {
