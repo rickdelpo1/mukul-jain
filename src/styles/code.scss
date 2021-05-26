@@ -20,6 +20,9 @@
       font-size: 16px;
       font-weight: 400;
     }
+    a {
+      color: theme.$green !important;
+    }
 
     blockquote {
       border-left: 3px solid scale-color(theme.$code-bg, $lightness: 20%);
@@ -97,10 +100,10 @@
     /* Inline code */
     :not(pre) > code[class*="language-"] {
       border-radius: 0.3em;
-      background: var(--inlineCode-bg);
-      color: var(--inlineCode-text);
       padding: 0.15em 0.2em 0.05em;
       white-space: normal;
+      background: rgba(115, 124, 153, 0.2);
+      color: #e6e6e6;
     }
 
     .token.attr-name {
@@ -196,6 +199,20 @@
     .gatsby-highlight pre[class*="language-"] {
       float: left;
       min-width: 100%;
+    }
+  }
+}
+
+.light {
+  .blog-post {
+    .blog-post-content {
+      a {
+        color: theme.$blue !important;
+      }
+      :not(pre) > code[class*="language-"] {
+        background: rgba(255, 229, 100, 0.2);
+        color: #1a1a1a;
+      }
     }
   }
 }
