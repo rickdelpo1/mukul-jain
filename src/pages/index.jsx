@@ -1,4 +1,6 @@
-import * as React from "react";
+//import React from "react";
+import React from 'react';
+//import * as React from "react";
 import { Link } from "gatsby";
 import Toggle from "../component/Toggle";
 import Glitter from "../component/Glitter";
