@@ -1,0 +1,17 @@
+{
+  "main.js": "render-page.js",
+  "render-page.js.map": "render-page.js.map",
+  "static/budget-book.png": "static/budget-book-7b7d9f88037c3a7d1d9e88049908ef32.png",
+  "static/cityscape1.svg": "static/cityscape1-242d288ba10c08320ce8fd5d7a65011a.svg",
+  "static/event-graphia-dropped.jpg": "static/event-graphia-dropped-eaaa3c4c8e2ea6c5b6738a8267ed9283.jpg",
+  "static/event-graphia.jpg": "static/event-graphia-e9a095104913a8bd005fe08f2f32df9b.jpg",
+  "static/flash.jpg": "static/flash-e1b5568b3c8287c2d2726a04f690893e.jpg",
+  "static/mokku.png": "static/mokku-fbc3cc3bd6a091edcdc601b42001e4d9.png",
+  "static/mun2017.jpg": "static/mun2017-50aa6ad1a1db8c7114ec13354d97e863.jpg",
+  "static/plinth2016.jpg": "static/plinth2016-7f51762faec48779e67b449ed4574efd.jpg",
+  "static/plinth2017.jpg": "static/plinth2017-14c76e04bc9c1d7993ff25fb64b10c8d.jpg",
+  "static/smart-grid.png": "static/smart-grid-1ef36dea0a8b0c92210dbaad73272588.png",
+  "static/timespread.jpg": "static/timespread-f28e2457616dadffb494ddea42e7aac2.jpg",
+  "static/web-os.png": "static/web-os-a931cc5c4ad33474ce47f43a0e5baf0a.png",
+  "static/zento.jpg": "static/zento-bca28dd24cf6b65794140b5854d503b3.jpg"
+}
