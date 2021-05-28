@@ -1,5 +1,5 @@
 module.exports = {
- pathPrefix: "/mukul-jain",
+ pathPrefix: "/mukul-jain", # added this line so i can deploy to gh pages
   siteMetadata: {
     title: "Mukul Jain",
     email: "jainmukul1996@gmail.com",
